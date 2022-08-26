@@ -24,3 +24,32 @@ table {
             padding: 10px;
             text-align: center;
 }
+
+
+
+#balletpink {
+    background-color: white;
+    opacity: 50%;
+}
+
+#tweety {
+    background-color: yellow;
+}
+
+#oceanside {
+    background-color: turquoise;
+}
+
+#candyapple {
+    background-color: red;
+}
+
+footer {
+display: flex;
+}
+footer div{
+    border: 1px solid black;
+    height: 100px;
+    flex-basis: 100px;
+    margin: 25px;
+}
