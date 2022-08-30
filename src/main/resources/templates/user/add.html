@@ -6,20 +6,21 @@
 </head>
 <body>
 
-<p th:text="${error}"></p>
+<p th:text="${error}" th:if="${error != null}"></p>
 
-<form action="user" method="post">
+<form action="/user" method="post">
     <label>Username: </label>
-    <input type="text" name="username">
+    <input type="text" name="username" id="username" th:value="${username}"> <!-- th:value holds the input in the field when the
+    use has to go back and re-type the password-->
 
     <label>Email Address: </label>
-    <input type="email" name="email">
+    <input type="email" name="email" id="email" th:value="${email}">
 
     <label>Password: </label>
-    <input type="password" name="password">
+    <input type="password" name="password" id="password">
 
     <label>Verify Password: </label>
-    <input type="password" name="verify">
+    <input type="password" name="verify" id="verify">
 
     <input type="submit" value="Submit">
 
